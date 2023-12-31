@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>FLY URZICKSTAN</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <!-- Header і навігація тут -->
+        <svg class="header_logo">
+          <use href="../assets/svg/symbol-defs(1).svg#icon-ic_logo"></use>
+        </svg>
+        <ul class="navigation-buttons-list">
+          <li class="navigation-buttons-list-el">
+            <a href="#home" class="navigation-tab">Home</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#about-us" class="navigation-tab">About Us</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#shop" class="navigation-tab">Shop</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#check-in" class="navigation-tab">Check-In</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#contact" class="navigation-tab">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Головна секція -->
+      <section id="home" class="home">
+        <div class="container">
+          <div class="contact-container">
+            <div>
+              <h1 class="title home-title">FLY URZICKSTAN</h1>
+              <p class="home-text">
+                We hope you'll enjoy fly urzickstan airlines and please dont die
+                after another terract
+              </p>
+              <button class="button-buy_tickets">BUY TICKETS</button>
+            </div>
+          </div>
+          <img
+            src="../assets/images/plane_1.png"
+            alt="location Urzikstan Fly Office"
+            width="540"
+            height="520"
+            class="contact-img home-img"
+          />
+        </div>
+      </section>
+
+      <!-- Секція "Про нас" -->
+      <section id="about-us" class="about-us">
+        <div class="container">
+          <h2 class="title">About Us</h2>
+          <ul class="about-us-list">
+            <li class="about-us-list-el">
+              <p class="about-us-text">
+                Our airlines have been operating since 1964 after the hijacking
+                of 12 An-2 aircraft from the USSR for the needs of the Urzykstan
+                Workers' Party. From now on, we are the leading carrier in the
+                Central Asia region.
+              </p>
+              <img
+                class="about-us-img"
+                src="../assets/images/an_12.png"
+                alt="An-12"
+                width="200"
+                height="100"
+                class="about-us-img"
+              />
+            </li>
+            <li class="about-us-list-el">
+              <img
+                src="../assets/images/stuardess.png"
+                alt="Stuardess"
+                width="200"
+                height="100"
+                class="about-us-img"
+              />
+              <p class="about-us-text">
+                We can guarantee you that in 67% of flights you will reach your
+                destination in comfort, pleasant staff and professional pilots.
+                In the remaining 33%, prepare to become great martyrs of the
+                people of Urzykstan.
+              </p>
+            </li>
+          </ul>
+          <div class="about-us-read_more">
+            <p class="read_more-text">
+              Read about Urzykstan Fly backstory here!
+            </p>
+            <a href="#" class="button-read_more">Read more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція "Магазин" -->
+      <section id="shop" class="shop">
+        <div class="container">
+          <h2 class="title">Shop</h2>
+          <details class="shop-details shop-details_1">
+            <summary class="shop-details_text">Buy a ticket on airline</summary>
+            <div class="details-content">
+              <div class="ticket-booking">
+                <p class="ticket-booking-title">Buy a ticket on airlane</p>
+                <form
+                  action="/search-flights"
+                  method="get"
+                  class="ticket-booking-form"
+                >
+                  <div class="ticket-booking-blockline">
+                    <input
+                      type="text"
+                      id="departure"
+                      name="departure"
+                      placeholder="Departure"
+                      class="ticket-booking-input"
+                    />
+                    <svg class="ticket-booking-icon_arrow_rotate">
+                      <use
+                        href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_rotate"
+                      ></use>
+                    </svg>
+                    <input
+                      type="text"
+                      id="arrival"
+                      name="arrival"
+                      placeholder="Arrival"
+                      class="ticket-booking-input"
+                    />
+                    <div class="custom-toggle-switch">
+                      <input
+                        type="checkbox"
+                        id="toggle-switch-input"
+                        class="hidden-checkbox"
+                      />
+                      <label for="toggle-switch-input" class="switch-label">
+                        <div class="svg-container first-label">
+                          <svg>
+                            <use
+                              href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_right"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="svg-container second-label">
+                          <svg>
+                            <use
+                              href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_swap"
+                            ></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    class="ticket-booking-input-date"
+                  />
+                  <div class="custom-toggle-switch-cl">
+                    <input
+                      type="checkbox"
+                      id="toggle-switch-input-cl"
+                      class="hidden-checkbox"
+                    />
+                    <label for="toggle-switch-input-cl" class="switch-label">
+                      <div class="svg-container first-label-cl">1cl</div>
+                      <div class="svg-container second-label-cl">2 cl</div>
+                    </label>
+                  </div>
+                  <button type="submit" class="button-search_now">
+                    Search now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </details>
+          <details class="shop-details shop-details_2">
+            <summary class="shop-details_text">Souvenirs</summary>
+            <div class="details-content">
+              <div class="souvenirs">
+                <h3 class="souvenirs-title">Souvenirs</h3>
+                <ul class="souvenirs-list">
+                  <li class="souvenirs-list-el">
+                    <div class="souvenir-item">
+                      <img
+                        src="../assets/images/souvenir_1.png"
+                        alt="Saadam Hussein"
+                        class="souvenir-item-img"
+                      />
+                      <h4 class="souvenir-item-title">Saadam Hussein</h4>
+                      <p class="souvenir-item-price"><span>1000</span>999</p>
+                    </div>
+                  </li>
+                  <li class="souvenirs-list-el">
+                    <div class="souvenir-item">
+                      <img
+                        src="../assets/images/souvenir_2.png"
+                        alt="Ashot Kukla"
+                        class="souvenir-item-img"
+                      />
+                      <h4 class="souvenir-item-title">"Ashot" Kukla</h4>
+                      <p class="souvenir-item-price"><span>1000</span>999</p>
+                    </div>
+                  </li>
+                  <li class="souvenirs-list-el">
+                    <div class="souvenir-item">
+                      <img
+                        src="../assets/images/souvenir_3.png"
+                        alt="Ak-12 obr. 1985"
+                        class="souvenir-item-img"
+                      />
+                      <h4 class="souvenir-item-title">Ak-12 obr. 1985</h4>
+                      <p class="souvenir-item-price"><span>1000</span>999</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </details>
+          <details class="shop-details shop-details_3">
+            <summary class="shop-details_text">Rent a business jet</summary>
+            <div class="details-content">
+              <div class="rental-info">
+                <h3 class="rental-info-title">Rent a businessjet</h3>
+                <div style="display: flex">
+                  <img
+                    src="../assets/images/image 5.png"
+                    alt="Business Jet"
+                    class="rental-info-img"
+                  />
+                  <div class="rental-info-block">
+                    <p class="rental-info-text">
+                      Wanna try a new experience? We have something for you! Fly
+                      on Antonov An-72 with extra comfort and safety (yes, we
+                      stole it from UN).
+                    </p>
+                    <button
+                      type="button"
+                      onclick="location.href='rental-form.html';"
+                      class="button-rental_try"
+                    >
+                      Try now!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Секція "Реєстрація" -->
+      <section id="check-in" class="check-in">
+        <div class="container">
+          <h2 class="title">Check-in</h2>
+          <div class="contact-container">
+            <div class="check-in-methods">
+              <p class="check-in-text">
+                You can check in any time from 30 hours before your flight's
+                departure. Please select how you would like to check in.
+              </p>
+            <a href="URL_для_страницы_входа" class="check-in-button">
+              Sign in account
+              <svg class="check-in-button-icon">
+                <use href="../assets/svg/symbol-defs(1).svg#icon-ic_user"></use>
+              </svg>
+            </a>
+
+            <a href="URL_для_страницы_деталей_бронирования" class="check-in-button">
+              Booking details
+              <svg class="check-in-button-icon">
+                <use href="../assets/svg/symbol-defs(1).svg#icon-icon_outline_ticket"></use>
+              </svg>
+            </a>
+            </div>
+            <img
+              src="../assets/images/plane_2.png"
+              alt="location Urzikstan Fly Office"
+              width="540"
+              height="520"
+              class="contact-img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Секція "Контакти" -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="title contact-title">Contact</h2>
+          <div class="contact-container">
+            <ul class="contact-list">
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_email"
+                  ></use>
+                </svg>
+                <a href="mailto:Urzickstan_fly@gmail.com"
+                  >Urzickstan_fly@gmail.com</a
+                >
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"
+                  ></use>
+                </svg>
+                <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
+                  ></use>
+                </svg>
+                Urzikstan Fly
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
+                  ></use>
+                </svg>
+                <a href="https://maps.google.com/?q=Your+Business+Location"
+                  >Urzikstan Fly Office</a
+                >
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
+                  ></use>
+                </svg>
+                <a href="https://t.me/YourTelegram">Real_Urzikstan_Fly</a>
+              </li>
+            </ul>
+            <img
+              src="../assets/images/image 1.png"
+              alt="location Urzikstan Fly Office"
+              width="540"
+              height="520"
+              class="contact-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div>
+          <div class="footer-block">
+            <h2 class="footer-title">FLY URZICKSTAN</h2>
+            <svg class="footer_logo">
+              <use href="../assets/svg/symbol-defs(1).svg#icon-ic_logo"></use>
+            </svg>
+          </div>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_email"
+                ></use>
+              </svg>
+              <a href="mailto:Urzickstan_fly@gmail.com"
+                >Urzickstan_fly@gmail.com</a
+              >
+            </li>
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"
+                ></use>
+              </svg>
+              <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
+            </li>
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
+                ></use>
+              </svg>
+              Urzikstan Fly
+            </li>
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
+                ></use>
+              </svg>
+              <a href="https://maps.google.com/?q=Your+Business+Location"
+                >Urzikstan Fly Office</a
+              >
+            </li>
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
+                ></use>
+              </svg>
+              <a href="https://t.me/YourTelegram">Real_Urzikstan_Fly</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="footer-links-list">
+        <li class="footer-links-list-el">
+          <a href="#home" class="footer-link">Home</a>
+        </li>
+        <li class="footer-links-list-el">
+          <a href="#contact" class="footer-link">Contact</a>
+        </li>
+        <li class="footer-links-list-el">
+          <a href="#about" class="footer-link">About us</a>
+        </li>
+        <li class="footer-links-list-el">
+          <a href="#shop" class="footer-link">Shop</a>
+        </li>
+        <li class="footer-links-list-el">
+          <a href="#check-in" class="footer-link">Check-in</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
